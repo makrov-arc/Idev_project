@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "idev_project_backend": {
+      "candid": "src/idev_project_backend/idev_project_backend.did",
+      "package": "idev_project_backend",
+      "type": "rust"
+    },
+    "idev_project_frontend": {
+      "dependencies": [
+        "idev_project_backend"
+      ],
+      "source": [
+        "src/idev_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "idev_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

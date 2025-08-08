@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/idev_project_backend"
+]
+resolver = "2"
