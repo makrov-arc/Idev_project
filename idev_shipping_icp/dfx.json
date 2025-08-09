@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "idev_shipping_icp_backend": {
+      "candid": "src/idev_shipping_icp_backend/idev_shipping_icp_backend.did",
+      "package": "idev_shipping_icp_backend",
+      "type": "rust"
+    },
+    "idev_shipping_icp_frontend": {
+      "dependencies": [
+        "idev_shipping_icp_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/idev_shipping_icp_frontend/src/index.html"
+      },
+      "source": [
+        "src/idev_shipping_icp_frontend/assets",
+        "dist/idev_shipping_icp_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/idev_shipping_icp_backend",
+]
